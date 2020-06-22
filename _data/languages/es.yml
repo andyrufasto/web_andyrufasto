@@ -1,0 +1,94 @@
+title:
+  archive: Archivo
+  category: Categoria
+  tag: Tag
+  schedule: Calendario
+  archives: Archivos
+  categories: Categorias
+  tags: Tags
+  about: Acerca De
+
+author: Autor
+
+menu:
+  home: Inicio
+  archives: Archivos
+  categories: Categories
+  tags: Tags
+  about: Acerca De
+  search: Buscar
+  schedule: Calendario
+  sitemap: Sitemap
+  commonweal: Commonweal 404
+
+sidebar:
+  overview: vista General
+  toc: Tabla de Contenidos
+
+post:
+  created: Creación del post
+  modified: Modificación del post
+  sticky: Sticky
+  posted: Posteado en
+  in: En
+  more: Más
+  read_more: Leer más
+  untitled: Sin Título
+  toc_empty: Este Post no tiene tabla de contenído
+  visitors: Visitantes
+  wordcount: Vistas
+  min2read: Reading time
+  copyright:
+    author: autor
+    link: Post link
+    license_title: Copyright Notice
+    license_content: 'All articles in this blog are licensed under
+      <a href="%s" rel="external nofollow" target="_blank">%s</a> unless stating additionally.'
+
+page:
+  totally: Total
+  tags: tags
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+
+counter:
+  tag_cloud:
+    zero: No tags
+    one: 1 tag in total
+    other: "%d tags in total"
+
+  categories:
+    zero: No categories
+    one: 1 category in total
+    other: "%d categories in total"
+
+  archive_posts:
+    zero: No posts.
+    one: 1 post.
+    other: "%d posts in total."
+
+state:
+  posts: posts
+  pages: paginas
+  tags: tags
+  categories: categories
+
+search:
+  placeholder: Searching...
+
+cheers:
+  um: Um..
+  ok: OK
+  nice: Bien.
+  good: Good
+  great: Great
+  excellent: Excellent
+
+keep_on: Keep on posting.
+
+symbol:
+  comma: ', '
+  period: '. '
+  colon: ':'

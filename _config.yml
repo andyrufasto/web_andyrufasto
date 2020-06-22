@@ -4,18 +4,18 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
+title: Andy Rufasto
 subtitle:
 description:
-author: John Doe
+author: Andy Rufasto
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: es
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
-baseurl:
+url: 
+baseurl: andyrufasto
 permalink: pretty
 
 # Pagination
@@ -215,7 +215,8 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
-
+social:
+  GitHub: https://github.com/andyrufasto
 
 # Social Links Icons
 # Icon Mapping:
