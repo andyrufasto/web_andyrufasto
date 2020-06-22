@@ -15,7 +15,7 @@ date_format: '%Y-%m-%d'
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url: 
-baseurl: andyrufasto
+baseurl: /andyrufasto
 permalink: pretty
 
 # Pagination
@@ -84,7 +84,7 @@ keywords: "Jekyll, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: http://andyrufasto.cf/atom.xml
 
 # Specify the date when the site was setup
 #since: 2015
@@ -93,7 +93,7 @@ rss:
 authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -137,9 +137,9 @@ menu_icons:
   home: home
   about: user
   categories: th
-  schedule: calendar
+  schedule: calendario
   tags: tags
-  archives: archive
+  archives: archivo
   sitemap: sitemap
   commonweal: heartbeat
 
