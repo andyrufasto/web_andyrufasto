@@ -12,7 +12,7 @@ author: Autor
 
 menu:
   home: Inicio
-  archives: Archivos
+  archives: Archivo
   categories: Categories
   tags: Tags
   about: Acerca De
@@ -29,7 +29,7 @@ post:
   created: Creación del post
   modified: Modificación del post
   sticky: Sticky
-  posted: Posteado en
+  posted: Posteado
   in: En
   more: Más
   read_more: Leer más
@@ -37,7 +37,7 @@ post:
   toc_empty: Este Post no tiene tabla de contenído
   visitors: Visitantes
   wordcount: Vistas
-  min2read: Reading time
+  min2read: 
   copyright:
     author: autor
     link: Post link
@@ -82,11 +82,11 @@ cheers:
   um: Um..
   ok: OK
   nice: Bien.
-  good: Good
-  great: Great
-  excellent: Excellent
+  good:  Que bueno
+  great: Genial
+  excellent: Excelente
 
-keep_on: Keep on posting.
+keep_on: .
 
 symbol:
   comma: ', '
