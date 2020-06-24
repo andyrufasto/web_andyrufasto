@@ -2,7 +2,8 @@
 title: Ten una web interactiva sin saber diseño web
 description: Todo el código necesario para una web parecida a  ésta
 categories:
- - tutorial
+ - Tutorial
+ - Linux
 tags: web
 ---
 
