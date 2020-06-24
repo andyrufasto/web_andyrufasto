@@ -14,8 +14,8 @@ date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: 
-baseurl: /web_andyrufasto
+url: http:www.andyrufasto.cf
+baseurl: 
 permalink: pretty
 
 # Pagination
