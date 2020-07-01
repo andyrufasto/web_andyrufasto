@@ -1,0 +1,83 @@
+<blockquote>
+  <p>Todo el código necesario para una web parecida a ésta.</p>
+</blockquote>
+
+<h2 id="instalación">Instalación</h2>
+
+<p>Hay que comenzar teniendo actualizado <a href="https://www.ruby-lang.org/es/documentation/installation/">Ruby</a>:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt install ruby
+</code></pre></div></div>
+
+<p>Luego instalar <a href="https://jekyllrb.com">Jekyll</a> :</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem install bundler jekyll
+</code></pre></div></div>
+<p>Busca un <a href="https://jekyllrb.com/resources/">tema de Jekyll</a>, en este caso es el tema Next del usuario Simpleyyt en github, estará documentado para adaptarlo a lo que quieras. y descárgalo, ingresa e ingresa a la carpeta.</p>
+
+<p>Si lo clonas de github sería algo asi:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/Simpleyyt/jekyll-theme-next.git
+<span class="nv">$ </span><span class="nb">cd </span>jekyll-theme-next
+</code></pre></div></div>
+<p>para instalar el tema:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle install
+</code></pre></div></div>
+<p>Ahora hay que iniciar el servidor de Ruby para ver el producto final:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll server
+</code></pre></div></div>
+<h2 id="configuración">Configuración</h2>
+
+<p>La configuración del tema esta en el archivo <code class="highlighter-rouge">_config.yml</code> lee la documentación del tema para todos los detalles.
+La carpeta <code class="highlighter-rouge">_site</code> el es producto final de los post en markdown ubicados en <code class="highlighter-rouge">_posts</code>, trata de no borrar los post ya que te pueden servir de guia para despues. solo muevelos a una carpeta.</p>
+
+<h3 id="_configyml">_config.yml</h3>
+
+<p>No puedes olvidarte de cambiar estas cosas:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Titulo de la Página</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s">/nombre_de_la_carpeta</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Nombre</span>
+</code></pre></div></div>
+
+<p>Si mueves los post de defecto a una carpeta llamada <code class="highlighter-rouge">_drafts</code> no se veran a no ser que se especifique con el comando:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--draft</span>
+</code></pre></div></div>
+<p>Esto es bueno para ocultar articulos que todavia no están completados.</p>
+
+<h2 id="posts">Posts</h2>
+
+<p>Para añadir un post solo debes añadir un archivo con extensión <code class="highlighter-rouge">.md</code>markdown a la carpeta <code class="highlighter-rouge">_posts</code>. Markdown es mucho más fácil que html y te ahorrará mucho tiempo de edición.</p>
+
+<p>Los archivos comienzan con la fecha, con el formato Año-mes-día-nombre del post.md, por ejemplo <code class="highlighter-rouge">2020-06-22-nuevo-post.md</code></p>
+
+<p>Con lo intuitivo que es ver un archivo de ejemplo con los que vienen los temas no hace falta extender en la síntaxis, pero si el encabezado.</p>
+<h3 id="postmd">post.md</h3>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Titulo de Post</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">asegurate si existen diferentes layouts</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+<h2 id="hosting">Hosting</h2>
+
+<p>Puedes subirlo gratis en tu pagina de <a href="https://www.github.com">GitHub</a>, crea un nuevo repositorio con el nombre idéntico al que le pones en <code class="highlighter-rouge">baseurl</code> en tu <code class="highlighter-rouge">_config.yml</code>
+En  settings cambia el branch a gh-pages</p>
+
+<p>Pues ahora solo falta subir la página a github utilizando git:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># asegurate de iniciar el repositorio local en la carpeta</span>
+<span class="nv">$ </span>git init 
+<span class="c"># asegurate de estar en el brach 'gh-pages'</span>
+<span class="nv">$ </span>git checkout <span class="nt">-b</span> gh-pages
+<span class="nv">$ </span>git status
+<span class="nv">$ </span>git add <span class="nb">.</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s2">"Primer commit"</span>
+</code></pre></div></div>
+<p>Ahora si ya puedes vilcularlo a tu repositorio</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git remote add origin https://github.com/tuusuario/nombre_de_la_carpeta.git
+</code></pre></div></div>
+<p>te pedirá tu usuario y contraseña de github.
+Vuelve a asegurarte de que estes en el brach <code class="highlighter-rouge">gh-pages</code> en la web de github.</p>
+
+<p>Tu url pública debe ser http://tu_usuario.github.io/nombre_de_la_carpeta</p>
+
+<p>Puedes adquirir un nombre de dominio para redirigir la url a la de github para no tener un url tan feo.
+Hay mucha documentación sobre todo esto si sabes inglés no vas a tener ningún problema salvo que escribas mal. En pocas horas podrás tener tu web, en realidad me he demorado más tiempo escribiendo este artículo que haciendo que funcione.</p>
