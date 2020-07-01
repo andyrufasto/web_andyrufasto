@@ -37,10 +37,20 @@ Ahora hay que iniciar el servidor de Ruby para ver el producto final:
 ```sh
 $ bundle exec jekyll server
 ```
+si hay errores en la configuración saldrán mensajes de error al generar la página.
+dentro de los mensajes el más importante es el de server adress
+```sh
+Server adress: https://127.0.0.1:4000
+```
+puedes darle click a esa direccion para ver el producto final en el navegador
+Jekyll mientras este corriendo leerá automáticamente los cambios en `_post` y generará automaticamente los html de `_site` pero no la configuraciónes de las otra carpetas, así que para hacer cambios en el tema tendras que volver a correr el servidor con el comando `bundle exec jekyll serve` (despues de cancelar la inicial obvio.)
+
 ## Configuración
 
 La configuración del tema esta en el archivo `_config.yml` lee la documentación del tema para todos los detalles.
 La carpeta `_site` el es producto final de los post en markdown ubicados en `_posts`, trata de no borrar los post ya que te pueden servir de guia para despues. solo muevelos a una carpeta.
+
+no cambies nada en la carpeta `_site`  ya que cada vez que vuelvas a ejecutar jekyll se este generara todo el sitio web no sólo el post que editas
 
 ### _config.yml
 
@@ -52,7 +62,7 @@ baseurl: /nombre_de_la_carpeta
 author: Nombre
 ```
 
-Si mueves los post de defecto a una carpeta llamada `_drafts` no se veran a no ser que se especifique con el comando:
+Si mueves los post de defecto a una carpeta llamada `_drafts` no se verán a no ser que se especifique con el comando:
 ```sh
 $ bundle exec jekyll serve --draft
 ```
@@ -70,12 +80,12 @@ Con lo intuitivo que es ver un archivo de ejemplo con los que vienen los temas n
 ```md
 ---
 title: Titulo de Post
-layout: asegurate si existen diferentes layouts
+layout: Comprueba si existen diferentes layouts
 ---
 ```
 ## Hosting
 
-Puedes subirlo gratis en tu pagina de [GitHub](https://www.github.com), crea un nuevo repositorio con el nombre idéntico al que le pones en `baseurl` en tu `_config.yml`
+Puedes subirlo gratis en tu pagina de [GitHub](https://www.github.com), crea un nuevo repositorio con el nombre idéntico al que asignas en `baseurl` en tu `_config.yml`
 En  settings cambia el branch a gh-pages
 
 Pues ahora solo falta subir la página a github utilizando git:
@@ -88,14 +98,17 @@ $ git status
 $ git add .
 $ git commit -m "Primer commit"
 ```
+>No voy a enseñarte a usar git en este post, si no sabes intenta solo subir todos los archivos al repositorio "arrastrando" a la interfaz web de github
+
 Ahora si ya puedes vilcularlo a tu repositorio
 ```
 $ git remote add origin https://github.com/tuusuario/nombre_de_la_carpeta.git
+$ git push
 ```
 te pedirá tu usuario y contraseña de github.
 Vuelve a asegurarte de que estes en el brach `gh-pages` en la web de github.
 
-Tu url pública debe ser http://tu_usuario.github.io/nombre_de_la_carpeta
+Tu URL pública debe ser http://tu_usuario.github.io/nombre_de_la_carpeta
 
-Puedes adquirir un nombre de dominio para redirigir la url a la de github para no tener un url tan feo.
+Puedes adquirir un nombre de dominio para redirigir la URL a la de github para no tener un URL tan feo.
 Hay mucha documentación sobre todo esto si sabes inglés no vas a tener ningún problema salvo que escribas mal. En pocas horas podrás tener tu web, en realidad me he demorado más tiempo escribiendo este artículo que haciendo que funcione.
