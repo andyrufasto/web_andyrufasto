@@ -20,7 +20,7 @@ $ sudo apt install ruby
 
 Luego instalar [Jekyll](https://jekyllrb.com) :
 ```sh
-$ gem install bundler jekyll
+$ sudo gem install bundler jekyll
 ```
 Busca un [tema de Jekyll](https://jekyllrb.com/resources/), en este caso es el tema Next del usuario Simpleyyt en github, estará medianamente documentado para adaptarlo a lo que quieras. y descárgalo, ingresa e ingresa a la carpeta.
 

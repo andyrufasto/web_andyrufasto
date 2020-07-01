@@ -1,0 +1,50 @@
+<blockquote>
+  <p>visualización de la distribución de variables cuantitativas</p>
+</blockquote>
+
+<h2 id="r">R</h2>
+
+<p>R es el lenguaje de programación más utilizado para programación estadistica, la versatilidad de sus graficos en relacion a lo fácil de su código hace que sea incluso más simple de usar que Python.
+Los histogramas se utilizan para analizar la distribucion de variables cuantitativas.</p>
+
+<p>Comencemos a obtener numeros aleatorios  que posean una distribución normal con el comando ‘rnorm’ y entre parentesis la cantidad de números aleatorios que necesitamos.</p>
+
+<p>estos números lo almacenaremos en la variable ‘x’ utilizando  <code class="highlighter-rouge">&lt;-</code></p>
+
+<p>Creando 100 números aleatórios con distribución normal</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rnorm</span><span class="p">(</span><span class="m">100</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>Almacenando los resultados en la variable x</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rnorm</span><span class="p">(</span><span class="m">100</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h2 id="hist">hist</h2>
+
+<p>Realizando el histográma:</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p><img src="https://github.com/andyrufasto/web_andyrufasto/blob/gh-pages/assets/images/avatar.gif" alt="Distribución de la variable x" /></p>
+
+<p>En la figura de arriba se puede ver el tipo más básico de histograma que se puede crear,  para ver todos los argumentos que admite la función <code class="highlighter-rouge">hist</code> se puede escribir <code class="highlighter-rouge">?hist</code> ; cada  argumento va seguido de una coma. Todo el codigo puede ir en una sola linea, pero para que sea más legible se da enter, para indicar que el codigo no esta terminado se cambia el icono de <code class="highlighter-rouge">&gt;</code> por <code class="highlighter-rouge">+</code> a cada nueva linea automáticamente.
+Acontinuación los argumentos más útiles :</p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span><span class="w"> </span><span class="n">hist</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w">
+</span><span class="o">+</span><span class="w">      </span><span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Histograma de ..."</span><span class="p">,</span><span class="w"> </span><span class="c1">#Titulo</span><span class="w">
+</span><span class="o">+</span><span class="w">      </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Frecuencia"</span><span class="p">,</span><span class="w">        </span><span class="c1">#Titulo del eje "y"</span><span class="w">
+</span><span class="o">+</span><span class="w">      </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Variable"</span><span class="p">,</span><span class="w">          </span><span class="c1">#Titulo del eje "x"</span><span class="w">
+</span><span class="o">+</span><span class="w">       </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w">               </span><span class="c1">#Color</span><span class="w">
+</span><span class="o">+</span><span class="w">      </span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="ggplot2">ggplot2</h2>
+
+<p>Para tener una mejor vizualizacion de los datos , de manera menos básica e incluso asignar variables a la estética, usaremos el paquete <code class="highlighter-rouge">ggplot2</code></p>
+
+<p>Si aún no lo tienes lo puedes instalar con <code class="highlighter-rouge">install.packages</code>, ys e activa con <code class="highlighter-rouge">library</code></p>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="s2">"ggplot2"</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+</span><span class="n">plot</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_histogram</span><span class="p">())</span><span class="w">
+</span></code></pre></div></div>
