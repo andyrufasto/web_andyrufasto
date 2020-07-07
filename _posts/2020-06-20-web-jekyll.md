@@ -2,7 +2,6 @@
 title: Ten una web interactiva sin saber diseño web
 description: Todo el código necesario para una web parecida a  ésta
 categories:
- - Tutorial
  - Linux
 tags: web
 ---
@@ -21,9 +20,9 @@ Luego instalar [Jekyll](https://jekyllrb.com) :
 ```sh
 $ sudo gem install bundler jekyll
 ```
-Busca un [tema de Jekyll](https://jekyllrb.com/resources/), en este caso es el tema Next del usuario Simpleyyt en github, estará documentado para adaptarlo a lo que quieras. y descárgalo, ingresa e ingresa a la carpeta.
+Busca un [tema de Jekyll](https://jekyllrb.com/resources/), en este caso es el tema Next del usuario Simpleyyt en github, estará documentado para adaptarlo a lo que quieras. Y descargarlo, ingresa e ingresa a la carpeta.
 
-Si lo clonas de github sería algo asi:
+Si lo clonas de github sería algo así:
 ```sh
 $ git clone https://github.com/Simpleyyt/jekyll-theme-next.git
 $ cd jekyll-theme-next
@@ -38,19 +37,19 @@ Ahora hay que iniciar el servidor de Ruby para ver el producto final:
 $ bundle exec jekyll server
 ```
 si hay errores en la configuración saldrán mensajes de error al generar la página.
-dentro de los mensajes el más importante es el de server adress
+Dentro de los mensajes el más importante es el de server address
 ```sh
-Server adress: https://127.0.0.1:4000
+Server address: https://127.0.0.1:4000
 ```
-puedes darle click a esa direccion para ver el producto final en el navegador
-Jekyll mientras este corriendo leerá automáticamente los cambios en `_post` y generará automaticamente los html de `_site` pero no la configuraciónes de las otra carpetas, así que para hacer cambios en el tema tendras que volver a correr el servidor con el comando `bundle exec jekyll serve` (despues de cancelar la inicial obvio.)
+puedes darle click a esa dirección para ver el producto final en el navegador
+Jekyll mientras este corriendo leerá automáticamente los cambios en `_post` y generará automáticamente los html de `_site` pero no la configuraciones de las otra carpetas, así que para hacer cambios en el tema tendrás que volver a correr el servidor con el comando `bundle exec jekyll serve` (después de cancelar la inicial obvio.)
 
 ## Configuración
 
 La configuración del tema esta en el archivo `_config.yml` lee la documentación del tema para todos los detalles.
-La carpeta `_site` el es producto final de los post en markdown ubicados en `_posts`, trata de no borrar los post ya que te pueden servir de guia para despues. solo muevelos a una carpeta.
+La carpeta `_site` el es producto final de los post en markdown ubicados en `_posts`, trata de no borrar los post ya que te pueden servir de guia para después. Solo muévalos a una carpeta.
 
-no cambies nada en la carpeta `_site`  ya que cada vez que vuelvas a ejecutar jekyll se este generara todo el sitio web no sólo el post que editas
+No cambies nada en la carpeta `_site`  ya que cada vez que vuelvas a ejecutar jekyll se este generara todo el sitio web no sólo el post que editas
 
 ### _config.yml
 
@@ -66,7 +65,7 @@ Si mueves los post de defecto a una carpeta llamada `_drafts` no se verán a no 
 ```sh
 $ bundle exec jekyll serve --draft
 ```
-Esto es bueno para ocultar articulos que todavia no están completados.
+Esto es bueno para ocultar artículos que todavía no están completados.
 
 ## Posts
 
@@ -74,7 +73,7 @@ Para añadir un post solo debes añadir un archivo con extensión `.md`markdown 
 
 Los archivos comienzan con la fecha, con el formato Año-mes-día-nombre del post.md, por ejemplo `2020-06-22-nuevo-post.md`
 
-Con lo intuitivo que es ver un archivo de ejemplo con los que vienen los temas no hace falta extender en la síntaxis, pero si el encabezado.
+Con lo intuitivo que es ver un archivo de ejemplo con los que vienen los temas no hace falta extender en la sintaxis, pero si el encabezado.
 ### post.md
 
 ```md
@@ -100,15 +99,15 @@ $ git commit -m "Primer commit"
 ```
 >No voy a enseñarte a usar git en este post, si no sabes intenta solo subir todos los archivos al repositorio "arrastrando" a la interfaz web de github
 
-Ahora si ya puedes vilcularlo a tu repositorio
+Ahora si ya puedes vincularlo a tu repositorio
 ```
 $ git remote add origin https://github.com/tuusuario/nombre_de_la_carpeta.git
 $ git push
 ```
 te pedirá tu usuario y contraseña de github.
-Vuelve a asegurarte de que estes en el brach `gh-pages` en la web de github.
+Vuelve a asegurarte de que estés en el branch `gh-pages` en la web de github.
 
 Tu URL pública debe ser http://tu_usuario.github.io/nombre_de_la_carpeta
 
 Puedes adquirir un nombre de dominio para redirigir la URL a la de github para no tener un URL tan feo.
-Hay mucha documentación sobre todo esto si sabes inglés no vas a tener ningún problema salvo que escribas mal. En pocas horas podrás tener tu web, en realidad me he demorado más tiempo escribiendo este artículo que haciendo que funcione.
+ay mucha documentación sobre todo esto si sabes inglés no vas a tener ningún problema salvo que escribas mal. En pocas horas podrás tener tu web, en realidad me he demorado más tiempo escribiendo este artículo que haciendo que funcione.
