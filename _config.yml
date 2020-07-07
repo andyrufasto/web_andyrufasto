@@ -4,7 +4,7 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Andy Rufasto - Blog Personal
+title: Andy Rufasto
 subtitle:
 description:
 author: Andy Rufasto
@@ -119,9 +119,9 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories/
-  about: /about/
-  archives: /archives/
   tags: /tags/
+  archives: /archives/
+  about: /about/
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
