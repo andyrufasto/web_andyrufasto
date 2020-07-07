@@ -217,6 +217,7 @@ font:
   #LinkLabel: Link
 social:
   GitHub: https://github.com/andyrufasto
+  Linkedin: https://www.linkedin.com/in/andyrufasto/
 
 # Social Links Icons
 # Icon Mapping:
@@ -229,8 +230,7 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
-
+  Linkedin: linkedin
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
@@ -265,13 +265,13 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
-  offset: 12
+  offset: 10
   offset_float: 0
 
   # Back to top in sidebar
@@ -354,7 +354,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
