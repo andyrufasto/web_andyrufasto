@@ -23,6 +23,8 @@ Por lo que en mi bashrc sera así:
 ```sh
 source ~/.config/bash/alias.bashrc
 ```
+Borraste tu `.bashrc` o lo dejaste inservible? jajaja a todos nos pasa algo así la primera vez puedes restaurar copiándolo así `cp /etc/skel/.bashrc ~/` y cargarlo con `source ~/.bashrc`
+
 ## Aliases
 Los aliases podemos entenderlo como abreviaturas a comandos más largos o difíciles de recordar.
 

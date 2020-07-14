@@ -3,7 +3,7 @@ title: CLI-VIS
 description: Un visualizador para lucir cool en internet
 categories:
  - Linux
-tags: Linux pywal 
+tags: Linux pywal cli
 ---
 # CLI-VIS
 [cli-visualizer](https://github.com/dpayne/cli-visualizer) es un visualizador de audio, simple y customizable.
