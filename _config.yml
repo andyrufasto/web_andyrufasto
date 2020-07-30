@@ -19,7 +19,7 @@ baseurl:
 permalink: pretty
 
 # Pagination
-paginate: 10
+paginate: 5
 #paginate_path: "/page:num/"
 #archive:
   #paginate: 10
@@ -90,10 +90,10 @@ rss:
 #since: 2015
 
 # icon between year and author @Footer
-authoricon: heart
+#authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: false
+#
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -248,11 +248,11 @@ toc:
   wrap: false
 
 
-# Creative Commons 4.0 International License.
-# http://creativecommons.org/
+#Creative Commons 4.0 International License.
+#http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 #creative_commons: by-nc-sa
-#creative_commons:
+creative_commons: by-sa
 
 
 sidebar:
@@ -278,7 +278,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -332,7 +332,7 @@ post_wordcount:
 post_copyright:
   enable: false
   license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 
@@ -492,7 +492,7 @@ facebook_sdk:
   enable: true
   app_id:       #<app_id>
   fb_admin:     #<user_id>
-  like_button:  #true
+  like_button:  true
   webmaster:    #true
 
 # Facebook comments plugin
