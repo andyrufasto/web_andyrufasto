@@ -1,6 +1,7 @@
 ---
 title: Plugins en Vim
 description: Para un Vim más potente y amigable
+image: 
 categories:
  - Vim
 tags: Vim 

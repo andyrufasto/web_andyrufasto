@@ -1,0 +1,9 @@
+ps aux | grep vim | grep -v grep | awk '{ print $2}' | xargs -n1 kill -9
+sleep 2s && xdo close $(xdotool getactivewindow)
+htop
+xkill
+killall -p vim
+ps vim && kill ID
+:quit
+:q!
+ZZ
