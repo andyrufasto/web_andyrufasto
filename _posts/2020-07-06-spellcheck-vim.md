@@ -3,6 +3,7 @@ title: Corrector ortográfico en Vim
 description: La ortografía es importante.
 categories:
  - Linux
+ - Vim
 tags: Linux Vim
 ---
 > La ortografía es importante.

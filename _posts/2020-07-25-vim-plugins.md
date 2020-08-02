@@ -1,10 +1,11 @@
 ---
 title: Plugins en Vim
 description: Para un Vim más potente y amigable
-image: 
+photos: 
+- /photos/vim/plugins.png
 categories:
  - Vim
-tags: Vim 
+tags: Vim cli
 ---
 
 > 
