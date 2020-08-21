@@ -8,7 +8,6 @@ categories:
 tags: Vim cli
 ---
 
-> 
 
 # VIM PLUGINS
 
@@ -24,9 +23,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ## Uso (.vimrc):
 ```sh
-~ set rtp+=~/.vim/bundle/vundle.vim
+~ set rtp+=~/.vim/bundle/Vundle.vim
 ~
-~ call vundle#begin(~/.vim/plugged)
+~ call vundle#begin()
 ~ Plugin 'path/github'
 ~ call vundle#end()
 ```
