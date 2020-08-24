@@ -21,6 +21,8 @@ Luego instalar [Jekyll](https://jekyllrb.com) :
 ```sh
 $ sudo gem install bundler jekyll
 ```
+> en Arch Linux necesitas instalar **sudo pacman -S ruby-ffi**
+
 Busca un [tema de Jekyll](https://jekyllrb.com/resources/), en este caso es el tema Next del usuario Simpleyyt en github, estará documentado para adaptarlo a lo que quieras. Y descargarlo, ingresa e ingresa a la carpeta.
 
 Si lo clonas de github sería algo así:
@@ -32,6 +34,8 @@ para instalar el tema:
 ```sh
 $ bundle install
 ```
+> si tienes mensajes de error trata borrando el Gemfile.lock, y genera uno nuevo con **bundle install**
+
 Ahora hay que iniciar el servidor de Ruby para ver el producto final:
 
 ```sh
