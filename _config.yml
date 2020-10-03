@@ -5,8 +5,8 @@
 
 # Site
 title: Andy Rufasto
-subtitle:
-description:
+subtitle: 
+description: Blog personal sobre economía, programación y open source software
 author: Andy Rufasto
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: es
@@ -79,7 +79,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "linux, foss, programación, data science, andy rufasto, economía"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -381,8 +381,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: andyrufasto
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -524,7 +524,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: #<app_id>
   app_key: #<app_key>
 
