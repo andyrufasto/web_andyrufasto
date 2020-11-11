@@ -218,6 +218,7 @@ font:
 social:
   GitHub: https://github.com/andyrufasto
   Linkedin: https://www.linkedin.com/in/andyrufasto/
+  TwitterL: https://www.twitter.com/andy_rufasto
 
 # Social Links Icons
 # Icon Mapping:
@@ -609,10 +610,10 @@ exturl: false
 use_motion: true
 
 # Fancybox
-fancybox: true
+fancybox: false
 
 # Progress bar in the top during page loading.
-pace: true
+pace: false
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
