@@ -156,13 +156,13 @@ $code-background                : $gainsboro;
 $btn-font-weight                : normal;
 
 $btn-default-radius             : 0;
-$btn-default-bg                 : $black-deep;
-$btn-default-color              : white;
+$btn-default-bg                 : $link-color;
+$btn-default-color              : black;
 $btn-default-font-size          : 14px;
 $btn-default-border-width       : 2px;
 $btn-default-border-color       : $black-deep;
-$btn-default-hover-bg           : white;
-$btn-default-hover-color        : $black-deep;
+$btn-default-hover-bg           : $link-color;
+$btn-default-hover-color        : $link-color;
 $btn-default-hover-border-color : $black-deep;
 
 
