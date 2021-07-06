@@ -21,7 +21,7 @@ Aunque la mayoría de las cosas que hacen los plugins que hay en vim se pueden h
 
 ## Vundle
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VundleVim&repo=Vundle.vim)](https://github.com/VundleVim/Vundle.vim)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VundleVim&repo=Vundle.vim&show_owner=true)](https://github.com/VundleVim/Vundle.vim)
 
 Vundle es el gestor de plugins de vim muy sencillo de usar, aunque en realidad los demás son muy parecidos.
 Para instalarlo solo debes clonar ese repositorio en `~/.vim/bundle`:
