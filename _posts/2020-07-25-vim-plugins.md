@@ -4,8 +4,13 @@ description: Para un Vim más potente y amigable
 photos: 
 - /photos/vim/plugins.png
 categories:
- - Vim
+- Vim
 tags: Vim cli
+comments:
+  show: true
+  fediHost: mstdn.social
+  fediusername: andyrufasto
+  fediid: 106534905650893542
 ---
 
 
@@ -15,7 +20,10 @@ Aunque la mayoría de las cosas que hacen los plugins que hay en vim se pueden h
 
 
 ## Vundle
-[Vundle](https://github.com/VundleVim/Vundle.vim.git) es el gestor de plugins de vim muy sencillo de usar, aunque en realidad los demás son muy parecidos.
+
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=VundleVim&repo=Vundle.vim)](https://github.com/VundleVim/Vundle.vim)
+
+Vundle es el gestor de plugins de vim muy sencillo de usar, aunque en realidad los demás son muy parecidos.
 Para instalarlo solo debes clonar ese repositorio en `~/.vim/bundle`:
 ```sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
